@@ -4,23 +4,23 @@ using System.Collections;
 using System.Collections.Generic;
 using LuaInterface;
 
+public enum CStateType
+{
+	S_NONE = 0,
+	S_STAND,
+	S_ATTACK1,
+	S_ATTACK2,
+	S_SKILL1,
+	S_SKILL2,
+	S_SKILL3,
+	S_SKILL_ACE,
+	S_SMALL_FLOAT,
+	S_BIG_FLOAT,
+	S_LAID
+};
 
 public class CStateMgr
 {
-	public enum CStateType
-	{
-		S_NONE=0,
-		S_STAND,
-		S_ATTACK1,
-		S_ATTACK2,
-		S_SKILL1,
-		S_SKILL2,
-		S_SKILL3,
-		S_SKILL_ACE,
-		S_SMALL_FLOAT,
-		S_BIG_FLOAT,
-		S_LAID
-	};
 
 	private CLifeObj m_life = null;
 	private CState m_lastState = null;
