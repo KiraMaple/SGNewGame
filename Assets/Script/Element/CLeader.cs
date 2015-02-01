@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CPlayer : CLifeObj {
+public class CLeader : CLifeObj
+{
 
 	// Use this for initialization
 	protected override void Start()
