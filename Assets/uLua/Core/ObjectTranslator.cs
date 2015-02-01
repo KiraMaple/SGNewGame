@@ -50,15 +50,15 @@ namespace LuaInterface
 			assemblies=new List<Assembly>();
 			assemblies.Add(Assembly.GetExecutingAssembly());
 
-			importTypeFunction=new LuaCSFunction(this.importType);
-			loadAssemblyFunction=new LuaCSFunction(this.loadAssembly);
-			registerTableFunction=new LuaCSFunction(this.registerTable);
-			unregisterTableFunction=new LuaCSFunction(this.unregisterTable);
-			getMethodSigFunction=new LuaCSFunction(this.getMethodSignature);
-			getConstructorSigFunction=new LuaCSFunction(this.getConstructorSignature);
+			importTypeFunction=new LuaCSFunction(importType);
+			loadAssemblyFunction=new LuaCSFunction(loadAssembly);
+			registerTableFunction=new LuaCSFunction(registerTable);
+			unregisterTableFunction=new LuaCSFunction(unregisterTable);
+			getMethodSigFunction=new LuaCSFunction(getMethodSignature);
+			getConstructorSigFunction=new LuaCSFunction(getConstructorSignature);
 			
-			ctypeFunction = new LuaCSFunction(this.ctype);
-			enumFromIntFunction = new LuaCSFunction(this.enumFromInt);
+			ctypeFunction = new LuaCSFunction(ctype);
+			enumFromIntFunction = new LuaCSFunction(enumFromInt);
 			
 			createLuaObjectList(luaState);
 			createIndexingMetaFunction(luaState);

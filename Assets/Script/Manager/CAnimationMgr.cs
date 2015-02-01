@@ -8,12 +8,19 @@ public class CAnimationMgr {
 
 	public CAnimationMgr(CLifeObj life)
 	{
-		m_life = life;
-		m_animator = m_life.transform.Find("Animation").GetComponent<Animator>();
-		if (m_animator == null)
+		if (life == null)
 		{
-			Debug.Log("Role Animator is not found. Role:" + m_life.transform.name);
+			Debug.LogError("LifeObj is invalid. Role:" + m_life.transform.name);
+			return;
 		}
+		m_life = life;
+
+		//m_animator = m_life.transform.Find("Animation").GetComponent<Animator>();
+		//if (m_animator == null)
+		//{
+		//	Debug.LogError("Role Animator is not found. Role:" + m_life.transform.name);
+		//	return;
+		//}
 	}
 
 	public void Play(string name)

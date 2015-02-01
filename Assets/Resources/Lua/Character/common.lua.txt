@@ -1,0 +1,25 @@
+SkillDisType = {
+	SDT_NEAR = 0,
+	SDT_FAR = 1
+};--SkillDisType
+
+SkillRangeType = {
+	SRT_SIMPLE = 0,
+	SRT_GROUP = 1
+};--SkillRangeType
+
+SkillHurtType = {
+	SHT_HURT = 0,
+	SHT_TREAT = 1,
+	SHT_BUFF = 2
+};--SkillHurtType
+
+StateType = {
+	S_NONE = 0,
+	S_STAND = 1,
+	S_SKILL = 2,
+	S_ATTACKED = 3,
+	S_SMALL_FLOAT = 4,
+	S_BIG_FLOAT = 5,
+	S_LAID = 6
+};--StateType

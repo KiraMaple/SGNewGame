@@ -3,6 +3,11 @@ using System.Collections;
 
 public class CServant : CLifeObj
 {
+	public CServant()
+		: base()
+	{
+
+	}
 
 	// Use this for initialization
 	protected override void Start()

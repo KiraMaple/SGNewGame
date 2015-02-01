@@ -1,0 +1,45 @@
+﻿require("Lua/Character/common");
+
+Role = {
+	Name = "斧头手";
+	HP = 800;
+	SP = 200;
+	SPSpeed = 10;
+	Defense = 150;
+	
+	CDTimers = {
+		{id = 1, CD = 3},
+		{id = 2, CD = 5},
+		{id = 3, CD = 7},
+		{id = 4, CD = 8},
+		{id = 5, CD = 10}
+	};--CDTimers
+	
+	Skill = {
+		{
+			DisType = SkillDisType.SDT_NEAR;
+			RangeType = SkillRangeType.SRT_SIMPLE;
+			HurtType = SkillHurtType.SHT_HURT;
+			CDGroup = 1;
+			Damage = 100;
+			CostSP = 0;
+			Animation1 = "";
+			Animation2 = "";
+			CheckType = StateType.S_STAND;
+			AfterType = StateType.S_ATTACKED;
+		},
+		{
+			DisType = SkillDisType.SDT_NEAR;
+			RangeType = SkillRangeType.SRT_SIMPLE;
+			HurtType = SkillHurtType.SHT_HURT;
+			CDGroup = 1;
+			Damage = 120;
+			CostSP = 0;
+			Animation1 = "";
+			Animation2 = "";
+			CheckType = StateType.S_STAND;
+			AfterType = StateType.S_LAID;
+		},
+		
+	};--Skill
+};--Role
